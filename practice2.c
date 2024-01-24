@@ -44,3 +44,13 @@ int main(){
     fclose(pdbfile);
     return 0;
 }
+
+int main2(){
+    char line[100] = "lorem hfffkffhgg oedkdfjf oeffflfk oeeoefkffjgg owwlwskddjdk sssodkkeekdkd";
+    char *four[4];
+    four[2] = processLine(line, 4, 12);
+    //strncpy(four,processLine(line,4,10),sizeof(four));
+    printf("%s\n",four[2]);
+    printf("%d\n",strncmp(four[2],"fhgwg",4));
+    return 0;
+}
